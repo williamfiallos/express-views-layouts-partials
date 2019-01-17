@@ -1,0 +1,13 @@
+{{!-- 'each' represents for/forEach loop available in hbs file --}}
+<h2>The List of the Students:</h2>
+
+{{#each allStudents}}
+
+    {{ this.name }} has been part of {{ this.class }} in {{ this.cohort }} 
+    {{#if this.favoriteTopic }} and their favorite topic is {{ this.favoriteTopic }}. 
+    {{else}}
+    and they don't have a favorite topic.
+    {{/if}}
+    <br>
+
+{{/each}}

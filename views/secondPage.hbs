@@ -1,0 +1,11 @@
+<h2>My Cool Second Page</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dicta facere saepe soluta, praesentium veritatis voluptas quidem. Veniam, iste quibusdam numquam sed itaque eligendi eius, eos magni quis harum ipsa?</p>
+<br>
+{{!-- [brackets] don't work in hbs; instead use dot notation --}}
+<p>The first student in the array is: {{ allStudents.0.name }}</p><br>
+
+{{!-- we use partial here --}}
+{{> studentCard this}}
+
+
+<a href="/">Go to back to the Home Page</a>
